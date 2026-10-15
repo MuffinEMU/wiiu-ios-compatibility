@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "statuses": {
+    "runs-well": "Runs well",
+    "playable": "Playable",
+    "runs-with-issues": "Runs with issues",
+    "broken": "Doesn't work yet",
+    "reported-working": "Reported working"
+  },
+  "games": [
+    {
+      "slug": "mario-kart-8",
+      "name": "Mario Kart 8",
+      "status": "runs-well",
+      "reports": [
+        {
+          "device": "iPad Pro 11 (A12Z, 6 GB)",
+          "fps": "42 to 54",
+          "source": "Void (MuffinEMU 10.x)",
+          "note": "Measured with the on-screen frame counter."
+        },
+        {
+          "device": "iPhone 16",
+          "fps": "60",
+          "source": "player report (EspressU Discord, Oct 2026)",
+          "note": ""
+        }
+      ],
+      "footage": []
+    },
+    {
+      "slug": "super-mario-3d-world",
+      "name": "Super Mario 3D World",
+      "status": "runs-well",
+      "reports": [
+        {
+          "device": "iPhone 13",
+          "fps": "60",
+          "source": "player report (EspressU Discord, Oct 2026)",
+          "note": "With JIT. Screenshot attached to the report."
+        }
+      ],
+      "footage": []
+    },
+    {
+      "slug": "splatoon",
+      "name": "Splatoon",
+      "status": "playable",
+      "reports": [
+        {
+          "device": "iPhone 12",
+          "fps": "up to 60",
+          "source": "player report (EspressU Discord, Oct 2026)",
+          "note": "Not independently confirmed."
+        },
+        {
+          "device": "not stated",
+          "fps": "15 to 30",
+          "source": "player report (EspressU Discord, Oct 2026)",
+          "note": ""
+        }
+      ],
+      "footage": []
+    },
+    {
+      "slug": "the-legend-of-zelda-breath-of-the-wild",
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "status": "playable",
+      "reports": [
+        {
+          "device": "iPhone 13 Pro Max",
+          "fps": "23 to 30",
+          "source": "player report (EspressU Discord, Oct 2026)",
+          "note": "With the FPS++ graphic pack. One report of a save that would not load the next day."
+        },
+        {
+          "device": "iPhone 15 Pro",
+          "fps": "not stated",
+          "source": "player report (EspressU Discord, Oct 2026)",
+          "note": "Reported to run well."
+        }
+      ],
+      "footage": []
+    },
+    {
+      "slug": "bayonetta",
+      "name": "Bayonetta",
+      "status": "runs-with-issues",
+      "reports": [
+        {
+          "device": "not stated",
+          "fps": "unstable frame rate",
+          "source": "player report (EspressU Discord, Oct 2026)",
+          "note": "Audio is delayed. Reported on an earlier build."
+        }
+      ],
+      "footage": []
+    },
+    {
+      "slug": "call-of-duty-black-ops-ii",
+      "name": "Call of Duty: Black Ops II",
+      "status": "runs-with-issues",
+      "reports": [
+        {
+          "device": "not stated",
+          "fps": "not stated",
+          "source": "player report (EspressU Discord, Oct 2026)",
+          "note": "Loads and plays. The graphics side still needs work. One report with a video."
+        }
+      ],
+      "footage": []
+    },
+    {
+      "slug": "need-for-speed-most-wanted",
+      "name": "Need for Speed: Most Wanted",
+      "status": "broken",
+      "reports": [
+        {
+          "device": "iPhone 15 Pro",
+          "fps": "n/a",
+          "source": "player report (EspressU Discord, Oct 2026)",
+          "note": "Reported not working with JIT on and keys set up. Not resolved."
+        }
+      ],
+      "footage": []
+    },
+    {
+      "slug": "new-super-mario-bros-u",
+      "name": "New Super Mario Bros. U",
+      "status": "reported-working",
+      "reports": [],
+      "footage": []
+    },
+    {
+      "slug": "captain-toad-treasure-tracker",
+      "name": "Captain Toad: Treasure Tracker",
+      "status": "reported-working",
+      "reports": [],
+      "footage": []
+    },
+    {
+      "slug": "the-legend-of-zelda-the-wind-waker-hd",
+      "name": "The Legend of Zelda: The Wind Waker HD",
+      "status": "reported-working",
+      "reports": [],
+      "footage": []
+    }
+  ]
+}

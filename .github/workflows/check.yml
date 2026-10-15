@@ -1,0 +1,10 @@
+name: Check
+on:
+  push:
+  pull_request:
+jobs:
+  readme-is-current:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/build.py --check

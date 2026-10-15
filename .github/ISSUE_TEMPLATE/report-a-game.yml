@@ -1,0 +1,67 @@
+name: Report a game
+description: Tell us how a Wii U game runs on your iPhone or iPad
+title: "[Game] "
+labels: ["report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! You need your own legally dumped game. Do not share games, keys or firmware.
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      placeholder: Mario Kart 8
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: How did it run?
+      options:
+        - Runs well (steady 60 fps or close)
+        - Playable
+        - Runs with issues
+        - Doesn't work yet
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and iOS version
+      placeholder: iPhone 15 Pro, iOS 26.0
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: App and version
+      placeholder: MuffinEMU 10.3
+    validations:
+      required: true
+  - type: dropdown
+    id: jit
+    attributes:
+      label: Was JIT on?
+      options:
+        - "Yes"
+        - "No"
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: fps
+    attributes:
+      label: Frame rate
+      description: What the on-screen counter showed
+      placeholder: 55 to 60
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes, graphic packs and problems
+      description: Graphic packs used, settings changed, audio or graphics problems, crashes
+  - type: textarea
+    id: footage
+    attributes:
+      label: Footage
+      description: Drag a short clip or screenshot here, or paste a link. Hide personal information first.
