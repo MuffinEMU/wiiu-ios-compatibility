@@ -4,6 +4,8 @@ A community list of Wii U games that have been run on iPhone and iPad, with the 
 
 It is made for [MuffinEMU](https://github.com/MuffinEMU/Muffin-EMU) and is open to results from any Wii U emulator on iOS. The same data feeds the [compatibility page on the MuffinEMU website](https://muffinemu.github.io/MuffinEMU/docs/compatibility.html).
 
+**Website:** https://muffinemu.github.io/wiiu-ios-compatibility/ (built from this repo by `tools/site.py`).
+
 **Add a game:** [open a report](../../issues/new?template=report-a-game.yml). **Add footage:** see [CONTRIBUTING.md](CONTRIBUTING.md). **What we are testing next:** the [test checklist](../../issues/1).
 
 ## Statuses

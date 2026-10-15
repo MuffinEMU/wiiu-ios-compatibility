@@ -1,0 +1,70 @@
+/* Wii U on iOS compatibility site. Copyright (c) 2026 MuffinEMU Development Team (Void). SPDX-License-Identifier: GPL-3.0-only.
+   Extra styles on top of the MuffinEMU site stylesheet (site.css), using its colour tokens so every theme works. */
+.st { display: inline-flex; align-items: center; gap: 7px; padding: 5px 11px; border-radius: 999px; font: 600 .74rem/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; border: 1px solid currentColor; white-space: nowrap; }
+.st::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.st-runs-well { color: #1f9d5c; } .st-playable { color: #2f7fb0; } .st-runs-with-issues { color: #b26b00; } .st-broken { color: #c4372d; } .st-reported-working { color: #7a5fc4; }
+:root[data-mode="dark"] .st-runs-well { color: #5ff0a8; } :root[data-mode="dark"] .st-playable { color: #7cc8f2; } :root[data-mode="dark"] .st-runs-with-issues { color: #ffc56b; } :root[data-mode="dark"] .st-broken { color: #ff8c82; } :root[data-mode="dark"] .st-reported-working { color: #c9b8ff; }
+
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.stat { text-align: left; }
+.stat b { display: block; font: 700 clamp(2.2rem, 5vw, 3.4rem)/1 var(--font-display); letter-spacing: -.03em; background: linear-gradient(120deg, var(--dot1), var(--dot2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.stat span { color: var(--text-2); font-size: .95rem; }
+@media (max-width: 820px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+
+.tools { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 22px; }
+.search { flex: 1 1 260px; min-width: 0; max-width: 420px; padding: 13px 16px; border-radius: 14px; border: 1px solid var(--line-2); background: var(--surface); color: var(--text); font: inherit; }
+.search:focus-visible { outline: 2px solid var(--dot1); outline-offset: 2px; }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.fbtn { padding: 9px 14px; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); color: var(--text-2); font: 500 .85rem/1 var(--font-body); cursor: pointer; }
+.fbtn:hover { color: var(--text); border-color: var(--text-3); }
+.fbtn[aria-pressed="true"] { color: var(--text); border-color: var(--dot1); box-shadow: 0 0 0 1px var(--dot1) inset; }
+.sortsel { padding: 10px 12px; border-radius: 12px; border: 1px solid var(--line-2); background: var(--surface); color: var(--text); font: inherit; font-size: .9rem; }
+
+.gcards { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; }
+.gcard { display: flex; flex-direction: column; gap: 12px; text-decoration: none; color: inherit; min-height: 168px; }
+.gcard h3 { margin: 0; font-size: 1.15rem; letter-spacing: -.015em; }
+.gcard .meta { display: flex; gap: 8px 14px; flex-wrap: wrap; color: var(--text-2); font-size: .88rem; margin-top: auto; }
+.gcard .meta span { display: inline-flex; align-items: center; gap: 6px; }
+.gcard .fps { font: 600 .95rem var(--font-mono); color: var(--text); }
+.empty { color: var(--text-2); padding: 24px 0; }
+
+.mx-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+table.mx { border-collapse: collapse; width: 100%; min-width: 640px; font-size: .92rem; }
+.mx th, .mx td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.mx thead th { font: 600 .72rem var(--font-mono); letter-spacing: .09em; text-transform: uppercase; color: var(--text-3); position: sticky; top: 0; background: var(--surface-solid); }
+.mx tbody th a { color: var(--text); text-decoration: none; font-weight: 600; }
+.mx td.cell { font-family: var(--font-mono); }
+.mx td.cell.c-runs-well { background: color-mix(in oklab, #1f9d5c 16%, transparent); }
+.mx td.cell.c-playable { background: color-mix(in oklab, #2f7fb0 16%, transparent); }
+.mx td.cell.c-runs-with-issues { background: color-mix(in oklab, #b26b00 16%, transparent); }
+.mx td.cell.c-broken { background: color-mix(in oklab, #c4372d 16%, transparent); }
+.mx td.none { color: var(--text-3); }
+
+.reports { width: 100%; border-collapse: collapse; }
+.reports th, .reports td { text-align: left; padding: 12px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.reports thead th { font: 600 .72rem var(--font-mono); letter-spacing: .09em; text-transform: uppercase; color: var(--text-3); }
+.reports-wrap { overflow-x: auto; }
+.clip { margin: 14px 0 26px; }
+.clip video { width: 100%; border-radius: var(--radius-sm); background: #000; aspect-ratio: 4 / 3; max-height: 70vh; }
+.clip figcaption { color: var(--text-2); font-size: .9rem; margin-top: 8px; }
+
+.bar { height: 14px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); overflow: hidden; }
+.bar i { display: block; height: 100%; width: 0; border-radius: inherit; background: linear-gradient(90deg, var(--dot1), var(--dot2)); transition: width 1s var(--ease); }
+.pcount { display: flex; justify-content: space-between; gap: 12px; margin: 10px 0 0; color: var(--text-2); font-size: .95rem; }
+.tier { margin: 28px 0 8px; }
+.tl { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.tl li { display: flex; gap: 10px; align-items: flex-start; padding: 9px 12px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
+.tl li.sub { margin-left: 22px; background: transparent; padding: 6px 12px; }
+.tl .box { flex: none; width: 18px; height: 18px; margin-top: 2px; border-radius: 5px; border: 1.5px solid var(--text-3); display: grid; place-items: center; font-size: .7rem; line-height: 1; }
+.tl li.done .box { background: var(--dot1); border-color: var(--dot1); color: #fff; }
+.tl li.done .t { color: var(--text-3); text-decoration: line-through; }
+.steps { counter-reset: s; display: grid; gap: 14px; padding: 0; list-style: none; }
+.steps li { counter-increment: s; position: relative; padding-left: 52px; }
+.steps li::before { content: counter(s); position: absolute; left: 0; top: -2px; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; font: 700 1rem var(--font-display); background: linear-gradient(135deg, var(--dot1), var(--dot2)); color: #fff; }
+.crumbs { color: var(--text-3); font: 500 .8rem var(--font-mono); letter-spacing: .05em; }
+.sidegames a { display: flex; align-items: center; gap: 10px; }
+.sidegames .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; background: currentColor; }
+.sidegames .st-runs-well { color: #1f9d5c; } .sidegames .st-playable { color: #2f7fb0; } .sidegames .st-runs-with-issues { color: #b26b00; } .sidegames .st-broken { color: #c4372d; } .sidegames .st-reported-working { color: #7a5fc4; }
+:root[data-mode="dark"] .sidegames .st-runs-well { color: #5ff0a8; } :root[data-mode="dark"] .sidegames .st-playable { color: #7cc8f2; } :root[data-mode="dark"] .sidegames .st-runs-with-issues { color: #ffc56b; } :root[data-mode="dark"] .sidegames .st-broken { color: #ff8c82; } :root[data-mode="dark"] .sidegames .st-reported-working { color: #c9b8ff; }
+.sidegames a span.n { color: var(--text); }
+.legend { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
