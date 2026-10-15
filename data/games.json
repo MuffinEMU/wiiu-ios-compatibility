@@ -17,7 +17,7 @@
           "device": "iPad Pro 11 (A12Z, 6 GB)",
           "fps": "42 to 54",
           "source": "Void (MuffinEMU 10.x)",
-          "note": "Measured with the on-screen frame counter."
+          "note": "MuffinEMU 10.2 with JIT active (StikDebug). Measured with the on-screen frame counter. Footage: a 2 minute 11 second race clip."
         },
         {
           "device": "iPhone 16",
@@ -26,7 +26,9 @@
           "note": ""
         }
       ],
-      "footage": []
+      "footage": [
+        "https://github.com/MuffinEMU/wiiu-ios-compatibility/blob/main/snapshots/mario-kart-8/mario-kart-8_ipad-pro-a12z-6gb_jit-active_muffinemu-10.2.mp4"
+      ]
     },
     {
       "slug": "super-mario-3d-world",

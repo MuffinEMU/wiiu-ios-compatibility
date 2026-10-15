@@ -26,7 +26,7 @@ Frame rates depend on the device, on JIT, on graphic packs and on the version. A
 | **Bayonetta** | Runs with issues | unstable frame rate. Audio is delayed. Reported on an earlier build. | Wanted |
 | **Call of Duty: Black Ops II** | Runs with issues | Loads and plays. The graphics side still needs work. One report with a video. | Wanted |
 | **Captain Toad: Treasure Tracker** | Reported working | No details yet | Wanted |
-| **Mario Kart 8** | Runs well | iPad Pro 11 (A12Z, 6 GB): 42 to 54 fps. Measured with the on-screen frame counter.<br>iPhone 16: 60 fps. | Wanted |
+| **Mario Kart 8** | Runs well | iPad Pro 11 (A12Z, 6 GB): 42 to 54 fps. MuffinEMU 10.2 with JIT active (StikDebug). Measured with the on-screen frame counter. Footage: a 2 minute 11 second race clip.<br>iPhone 16: 60 fps. | [1](https://github.com/MuffinEMU/wiiu-ios-compatibility/blob/main/snapshots/mario-kart-8/mario-kart-8_ipad-pro-a12z-6gb_jit-active_muffinemu-10.2.mp4) |
 | **Need for Speed: Most Wanted** | Doesn't work yet | iPhone 15 Pro. Reported not working with JIT on and keys set up. Not resolved. | Wanted |
 | **New Super Mario Bros. U** | Reported working | No details yet | Wanted |
 | **Splatoon** | Playable | iPhone 12: up to 60 fps. Not independently confirmed.<br>15 to 30 fps. | Wanted |
